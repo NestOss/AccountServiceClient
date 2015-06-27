@@ -38,6 +38,9 @@ public class Main {
                 SubmitServiceRequestsRunnable submitTasksRunnable = new SubmitServiceRequestsRunnable(accountService, inputData);
                 submitTasksThread = new Thread(submitTasksRunnable);
                 submitTasksThread.start();
+                System.out.println("Reader threads number: " + inputData.getrCount());
+                System.out.println("Writer threads number: " + inputData.getwCount());
+                System.out.println("Id range: " + inputData.getIdRange());
                 System.out.println("AccountServiceClient working now. Type 'stop' to shutdown client.");
                 Scanner scanner = new Scanner(System.in);
                 while (!scanner.nextLine().equals("stop")) {
