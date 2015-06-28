@@ -1,4 +1,4 @@
-#Client for Account service link.
+#Client for Account service https://github.com/NestOss/AccountService.
 
 A RMI client for account service.
 
