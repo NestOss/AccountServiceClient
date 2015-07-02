@@ -6,9 +6,9 @@ A RMI client for account service.
 
 Command line arguments:  <--rCount rCount> <--wCount wCount> <--idList minId maxId>
 
-  rCount - number of threads, which invoke getAmount service method. Valid value from 1 to 10000;
+  rCount - number of threads, which invoke getAmount service method. Integer from range [1, 10000];
 
-  wCount - number of threads, which invoke addAmount service method. Valid value from 1 to 10000;
+  wCount - number of threads, which invoke addAmount service method. Integer from range [1, 10000];
 
   minId and maxId - left and right range boundary. Inclusive defines range of random id. Nonnegative integers. The arguments may be passed in the order minId,maxId or maxId,minId. 
 
